@@ -7,7 +7,7 @@ const App = ({ children, location }) => (
       <li><Link to="/page1">Page 1</Link></li>
       <li><Link to="/page2">Page 2</Link></li>
     </ul>
-
+    {children}
    </div>
 )
 
@@ -41,9 +41,10 @@ veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
 render((
   <Router history={browserHistory}>
     <Route path="/" component={App}>
-  </Route>
+      <IndexRoute component={Index}/>
       <Route path="page1" component={Page1} />
       <Route path="page2" component={Page2} />
+    </Route>
   </Router>
 ), document.getElementById('app'))
 console.log('ddddiiiidkdiiaakk');

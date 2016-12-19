@@ -2,6 +2,9 @@ import express from 'express';
 import morgan from 'morgan';
 import path from 'path';
 import chalk from 'chalk';
+import React from 'react';
+import Router from 'react-router';
+import routes from './routes/index'
 import compression from 'compression';
 import {NODE_SERVER_PORT} from '../configs/config.js';
 const app = express();
